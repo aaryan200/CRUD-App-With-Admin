@@ -1,0 +1,12 @@
+.dashboard-wrapper {
+    padding: 110px 50px 50px 50px;
+    background-color: var(--panel-color);
+    transition: var(--tran-05);
+    min-height: 100svh;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+.buton {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;
+}
+.pointer-event-none {
+    pointer-events: none !important;
+}

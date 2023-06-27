@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #0E4BF1;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --black-medium-color: #484040;
+    --hover-element-bg: #daedf9;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+    --success-color: #37d237;
+    --danger-color: #ff5050;
+    --input-border-color: #9a9a9a;
+    --title-hover-color: #1b59ff;
+    
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-02: all 0.2s ease;
+}
+body {
+    min-height: 100vh;
+    /* background-color: var(--primary-color); */
+}
+body.dark {
+    --primary-color: #3A3B3C;
+    --panel-color: #242526;
+    --text-color: #CCC;
+    --black-light-color: #CCC;
+    --black-medium-color: #CCC;
+    --hover-element-bg: #565656;
+    --title-hover-color: #7097ff;
+    --border-color: #4D4C4C;
+    --toggle-color: #FFF;
+    --box1-color: #3A3B3C;
+    --box2-color: #3A3B3C;
+    --box3-color: #3A3B3C;
+    --title-icon-color: #CCC;
+}
+/* .width-225 {
+    width: 225px;
+}
+.width-73 {
+    width: 73px;
+}
+.ml-225 {
+    margin-left: 225px;
+    width: calc(100% - 225px);
+}
+.ml-73 {
+    margin-left: 73px;
+    width: calc(100% - 73px);
+} */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper {
+    margin-left: 225px;
+}
+.sidebar-wrapper.close ~ .wrapper {
+    margin-left: 73px;
+}
+.credentials-wrapper {
+    margin: 0 auto;
+    background-color: #cdcdcd;
+    min-height: 100svh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.credentials-wrapper .credentials-container {
+    width: 100%;
+    max-width: 495px;
+    background-color: #e7e7e7;
+    padding: 25px 42px;
+    border-radius: 10px;
+}
+.credentials-wrapper .credentials-logo{
+    display: flex;
+    align-items: center;
+}
+.credentials-wrapper .credentials-logo img {
+    width: 63px;
+    border-radius: 50%;
+}
+.credentials-wrapper .credentials-headings {
+    display: flex;
+    flex-direction: column;
+}
+.credentials-wrapper .credentials-headings .page-heading {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(0, 104, 74);
+    margin: 32px 0 16px;
+}
+.credentials-wrapper .credentials-headings .account-question {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(28, 45, 56);
+    margin-bottom: 32px;
+}
+.credentials-wrapper .credentials-headings .account-question .credentials-link {
+    color: rgb(1, 107, 248);
+    cursor: pointer;
+}
+.credentials-container .credential-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.credentials-submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.credentials-submit-button button {
+    padding: 6px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(85, 85, 255);
+    color: #e5e5e5;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+}
+.credentials-submit-button button:hover,
+.credentials-submit-button button:focus {
+    background-color: rgb(38, 38, 255);
+}
+@media (max-width: 1000px) {
+    .wrapper {
+        margin-left: 73px;
+    }
+    .sidebar-wrapper.close ~ .wrapper {
+        margin-left: 225px;
+    }
+}
+@media (max-width: 400px) {
+    .credentials-wrapper .credentials-container {
+        padding: 25px 30px;
+    }
+}

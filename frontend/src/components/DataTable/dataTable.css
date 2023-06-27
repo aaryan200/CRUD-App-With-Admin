@@ -1,0 +1,22 @@
+.data-table-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.data-table-headings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.data-table-heading {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    width: 25%;
+    max-width: 250px;
+}
+@media (max-width: 760px) {
+    .data-table-wrapper {
+        overflow-x: scroll;
+    }
+}

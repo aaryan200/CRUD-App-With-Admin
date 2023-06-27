@@ -1,0 +1,16 @@
+.blogs-wrapper {
+    padding: 110px 50px 0 50px;
+    background-color: var(--panel-color);
+    transition: var(--tran-05);
+    min-height: 100svh;
+}
+.blogs-wrapper .blog-cards-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 235px;
+}
+@media (max-width: 440px) {
+    .blogs-wrapper {
+        padding: 110px 25px 0 25px;
+    }
+}

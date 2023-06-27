@@ -1,0 +1,33 @@
+.hover-text-container {
+    /* width: 96px; */
+    padding-right: 5px;
+    height: 32px;
+    background: var(--hover-element-bg);
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.hover-text-container::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 12px solid var(--hover-element-bg);
+    border-bottom: 6px solid transparent;
+}
+
+.hover-text-container h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: var(--black-light-color);
+    white-space: nowrap;
+}
