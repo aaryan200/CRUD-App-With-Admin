@@ -13,7 +13,7 @@ export default function TableRow({ blog }) {
             // console.log(user.email);
             // console.log(blog.email);
             // console.log(blog._id);
-            await axios.delete(`/blogs/${blog?._id}`, {
+            await axios.delete(`${process.env.REACT_APP_SERVER_URL}/blogs/${blog?._id}`, {
                 data: {
                     email: user.email
                 }

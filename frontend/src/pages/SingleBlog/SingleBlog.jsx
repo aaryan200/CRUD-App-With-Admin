@@ -12,7 +12,7 @@ export default function SingleBlog() {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await axios.get(`/blogs/${blogId}`);
+                const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/blogs/${blogId}`);
                 // console.log(typeof(res.data));
                 // console.log(typeof(blog));
                 setBlog(res.data);

@@ -22,7 +22,7 @@ export default function UpdateUser() {
             password: passwordRef.current.value
         };
         try {
-            const res = await axios.put(`/users/${user._id}`, updatedUser);
+            const res = await axios.put(`${process.env.REACT_APP_SERVER_URL}/users/${user._id}`, updatedUser);
             dispatch({ type : "UPDATE_SUCCESS", payload: res.data});
             window.location.reload();
         } catch(err) {

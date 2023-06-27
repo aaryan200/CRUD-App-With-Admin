@@ -17,7 +17,7 @@ export default function Dashboard() {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const res = await axios.get("/blogs/");
+                const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/blogs/`);
                 setBlogs(res.data);
             } catch (err) {
                 console.log(err);
@@ -26,7 +26,7 @@ export default function Dashboard() {
         fetchBlogs();
         const getNumUsers = async () => {
             try {
-                const res = await axios.get(`/users/get/count/?email=${user?.email}`);
+                const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/users/get/count/?email=${user?.email}`);
                 setNumUsers(res.data);
             } catch(err) {
                 console.log(err);

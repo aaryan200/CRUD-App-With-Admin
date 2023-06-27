@@ -18,7 +18,7 @@ export default function BlogForm({ titleValue = "", textValue = "", updateBlog =
         e.preventDefault();
         if (updateBlog) {
             try {
-                await axios.put(`/blogs/${blogId}`, {
+                await axios.put(`${process.env.REACT_APP_SERVER_URL}/blogs/${blogId}`, {
                     title: titleVal,
                     desc: textVal,
                     email: user.email
@@ -29,7 +29,7 @@ export default function BlogForm({ titleValue = "", textValue = "", updateBlog =
             }
         } else {
             try {
-                const res = await axios.post("/blogs/", {
+                const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/blogs/`, {
                     title: titleVal,
                     desc: textVal,
                     email: user.email,

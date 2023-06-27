@@ -25,7 +25,7 @@ export default function SinglePostContent({ blog }) {
             // console.log(user.email);
             // console.log(blog.email);
             // console.log(blog._id);
-            await axios.delete(`/blogs/${blog?._id}`, { data: {
+            await axios.delete(`${process.env.REACT_APP_SERVER_URL}/blogs/${blog?._id}`, { data: {
                 email: user.email
             }});
             window.location.replace("/");

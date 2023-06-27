@@ -28,7 +28,7 @@ export default function Sidebar() {
     useEffect(() => {
         try {
             const fetchRandomId = async () => {
-                const res = await axios.get("/blogs/get/random");
+                const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/blogs/get/random`);
                 // console.log(res);
                 setRandomId(res.data?._id);
             }

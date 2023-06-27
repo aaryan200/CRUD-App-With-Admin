@@ -14,7 +14,7 @@ export default function SignUp() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const res = await axios.post("/auth/register", {
+            const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/register`, {
                 firstName: firstNameRef.current.value,
                 lastName: lastNameRef.current.value,
                 email: emailRef.current.value,

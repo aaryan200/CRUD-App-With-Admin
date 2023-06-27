@@ -12,7 +12,7 @@ export default function Edit() {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await axios.get(`/blogs/${blogId}`);
+                const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/blogs/${blogId}`);
                 // console.log(res.data);
                 setBlog(res.data);
             } catch(err) {
