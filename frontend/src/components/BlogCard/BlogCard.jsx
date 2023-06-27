@@ -26,9 +26,9 @@ export default function BlogCard({ blog }) {
         setFirstName(arr[0]);
         setLastName(arr[1]);
     }, []);
-    function goToSingleBlog() {
-        window.location.replace(`/blog/${blog._id}`);
-    }
+    // function goToSingleBlog() {
+    //     window.location.replace(`/blog/${blog._id}`);
+    // }
     return (
         <div className='blog-card-wrapper'>
             <div className="blog-author-container">
@@ -43,8 +43,10 @@ export default function BlogCard({ blog }) {
                 </div>
             </div>
             <div className="blog-card-title">
-                <span className='blog-card-title-content' onClick={goToSingleBlog}>
-                    {blog.title}
+                <span className='blog-card-title-content'>
+                    <Link to={`/blog/${blog?._id}`} className='link'>
+                        {blog.title}
+                    </Link>
                 </span>
             </div>
             <div className="blog-card-desc">
