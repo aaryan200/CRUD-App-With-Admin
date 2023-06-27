@@ -18,7 +18,7 @@ export default function TableRow({ blog }) {
                     email: user.email
                 }
             });
-            window.location.reload();
+            window.location.replace("/admin");
         } catch (err) {
             console.log(err);
         }
