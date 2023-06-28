@@ -3,6 +3,7 @@
     background-color: var(--panel-color);
     transition: var(--tran-05);
     min-height: 100svh;
+    min-width: 100svh;
 }
 .single-post-wrapper .heading-main-wrapper .heading-icon-container {
     padding: 4px 5px 4px;
