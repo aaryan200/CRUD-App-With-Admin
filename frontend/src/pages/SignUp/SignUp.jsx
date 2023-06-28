@@ -20,7 +20,8 @@ export default function SignUp() {
                 email: emailRef.current.value,
                 password: passwordRef.current.value
             });
-            res.data && window.location.replace("/login");
+            // res.data && window.location.replace("/login");
+            res.data && window.location.replace("/");
         } catch(err) {
             console.log(err);
         }
