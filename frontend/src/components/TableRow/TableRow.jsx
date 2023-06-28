@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { Context } from '../../context/Context';
 
 export default function TableRow({ blog }) {
-    const {user} = useContext(Context);
+    const { user } = useContext(Context);
     async function handleDelete(e) {
         e.preventDefault();
         try {
@@ -18,7 +18,16 @@ export default function TableRow({ blog }) {
                     email: user.email
                 }
             });
-            window.location.replace("/admin");
+            window.location.replace("/");
+            // document.addEventListener("DOMContentLoaded", function () {
+                // window.location.replace("/");
+                // setTimeout(function () {
+                //     const adminButton = document.querySelector("#root > div > div.sidebar-wrapper > div.nav-links > div.main-navs > div:nth-child(5) > a");
+                //     console.log(adminButton);
+                //     adminButton.click();
+                // }, 5000); // 1000 milliseconds delay (adjust as needed)
+            // });
+
         } catch (err) {
             console.log(err);
         }
