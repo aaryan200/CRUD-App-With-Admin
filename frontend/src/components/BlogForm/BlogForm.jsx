@@ -23,7 +23,8 @@ export default function BlogForm({ titleValue = "", textValue = "", updateBlog =
                     desc: textVal,
                     email: user.email
                 });
-                window.location.replace(`/`);
+                // window.location.replace(`/`);
+                window.location.replace(`/blog/${blogId}`);
             } catch(err) {
                 console.log(err);
             }
@@ -35,7 +36,8 @@ export default function BlogForm({ titleValue = "", textValue = "", updateBlog =
                     email: user.email,
                     username: `${user.firstName} ${user.lastName}`
                 })
-                window.location.replace(`/`);
+                // window.location.replace(`/`);
+                window.location.replace(`/blog/${res?.data?._id}`);
             } catch(err) {
                 console.log(err);
             }
