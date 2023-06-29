@@ -10,3 +10,8 @@
     justify-content: space-between;
     width: 100%;
 }
+@media (max-width: 440px) {
+    .dashboard-wrapper {
+        padding: 110px 25px 0 25px;
+    }
+}

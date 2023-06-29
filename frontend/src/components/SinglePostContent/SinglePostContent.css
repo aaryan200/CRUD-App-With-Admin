@@ -31,3 +31,8 @@
     line-height: 1.8;
     color: var(--text-color);
 }
+@media (max-width: 440px) {
+    .single-post-wrapper {
+        padding: 110px 25px 0 25px;
+    }
+}
