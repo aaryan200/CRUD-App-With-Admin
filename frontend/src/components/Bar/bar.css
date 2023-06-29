@@ -6,9 +6,11 @@
     position: fixed;
     border-right: 1px solid var(--border-color);
     width: 225px;
+    transition: var(--tran-05);
 }
 .sidebar-wrapper.close {
     width: 73px;
+    transition: var(--tran-05);
 }
 .topbar-wrapper {
     display: flex;
