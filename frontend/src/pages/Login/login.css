@@ -1,0 +1,9 @@
+.login-error-msg {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.login-error-msg p {
+    color: #dc2424;
+    font-size: 15px;
+}
